@@ -19,17 +19,20 @@ function setup() {
   stroke(0,255,0)
 
   getplot(y,s,5);  // (array, function, value of global k)
-  plotit(y)
+  plotit(y,-1)
+  plotit(y,1)
   // s1
 
   getplot(y1,s1,2) // (array, function, value of global k)
   stroke(0,255,255)
-  plotit(y1)
+  plotit(y1,-1)
+  plotit(y1,1)
   print(y)
   // blanc
   stroke(255,255,0)
   getplot(y2,bl,12); // (array, function, value of global k)
-  plotit(y2)
+  plotit(y2,-1)
+  plotit(y2, 1)
 }
 
 function plotaxis() {
@@ -71,11 +74,11 @@ function bl(x){
 }
 
 
-function plotit(arr){
+function plotit(arr,u){
     noFill();
     beginShape()
     for(let i = 0; i<arr.length;i++){
-        let y = arr[i]*(height/2)*-1  
+        let y = arr[i]*(height/2)*u 
         let x = -(width/2)+i
         print(x,y)
         //point(x,y)
