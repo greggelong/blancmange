@@ -26,3 +26,6 @@ let ind =0;
 
 then I plot those y values as a height at an x
 
+
+https://greggelong.github.io/blancmange
+
