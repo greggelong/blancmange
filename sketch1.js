@@ -84,7 +84,7 @@ function plotit(arr,u){
     for(let i = 0; i<arr.length;i++){
         let y = arr[i]*(height/2)*u 
         let x = -(width/2)+i
-        print(x,y)
+        
         //point(x,y)
         vertex(x,y)
 
